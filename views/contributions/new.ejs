@@ -1,0 +1,25 @@
+<h2>Add new contribution:</h2>
+console.log(user.local.id)
+<form method="post" action="/contributions">
+  <div class="row">
+    <div class="form-group">
+      <input type="text" class="form-control" name="item" id="item" placeholder="item">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="description" id="description" placeholder="description">
+    </div>
+    <div class="form-group">
+      <select name="action">
+        <option value="giveaway">giveaway</option>
+        <option value="borrow">borrow</option>
+        <option value="exchange">exchange</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" name="address" id="address" placeholder="eg. Orchard MRT">
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-success btn-block">Add</button>
+    </div>
+  </div>
+</form>

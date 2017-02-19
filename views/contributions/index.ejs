@@ -1,0 +1,26 @@
+<h1>All available items</h1>
+
+<pre><%=contributions%></pre>
+
+<table class="table table-hover">
+  <thead>
+	<tr>
+		<th>Item</th>
+		<th>Description</th>
+		<th>Action</th>
+		<th>Collection address</th>
+    <th>More details</th>
+	</tr>
+</thead>
+  <tbody>
+    <% contributions.forEach(function(contribution) { %>
+      <tr>
+      <td><%=contribution.item%></td>
+      <td><%=contribution.description%></td>
+      <td><%=contribution.action%></td>
+      <td><%=contribution.address%></td>
+      <td><a href="/contributions/<%=contribution.id%>">View details</a></td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
